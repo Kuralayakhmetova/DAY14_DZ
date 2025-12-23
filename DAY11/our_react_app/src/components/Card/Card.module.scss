@@ -1,6 +1,10 @@
+$card-bg: #f5eded;
+$card-border: #280808;
+
 .card {
+    background-color: $card-bg;
   width: 240px;
-  border: 1px solid #280808;
+  border: 1px solid $card-border;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 2px;
@@ -21,6 +25,11 @@
   transition: all 0.3s ease;
 }
 
+.h1 {
+  font-weight: bold;  /* жирный текст */
+  font-size: 16px;    /* размер текста */
+  color: #333;        /* цвет текста */
+}
 /* .main-style {
   padding: 16px;
   background-color: #282c34;

@@ -1,14 +1,7 @@
-import React from "react";
 import { useState } from "react";
-import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
-import MainDashboard from "./components/MainDashboard";
-import Card from "./components/Card/Card.jsx";
-import Boards from "./components/Boards.jsx";
-import BoardCard from "./components/BoardCard/BoardCard.jsx";
 
-function App() {
-  const products = [
+function MovieCards() {
+   const products = [
     {
       id: 1,
       title: "Мажор в Дубае",
@@ -75,32 +68,6 @@ function App() {
     },
   ];
 
-  const [boards] = useState([
-    {
-      id: 1,
-      title: "Учебная доска",
-      description: "React, конспекты",
-      date: "15.03.2025",
-    },
-    {
-      id: 2,
-      title: "Рабочая доска",
-      description: "Задачи по JavaScript",
-      date: "16.03.2025",
-    },
-    {
-      id: 3,
-      title: "Личная доска",
-      description: "Идеи и заметки",
-      date: "17.03.2025",
-    },
-  ]);
-  /*  const BoardCard = [
-  { id: 1, title: "Учебная доска", description: "React, конспекты", date: "15.03.2025" },
-  { id: 2, title: "Рабочая доска", description: "Задачи по JavaScript", date: "16.03.2025" },
-  { id: 3, title: "Личная доска", description: "Идеи и заметки", date: "17.03.2025" },
-];
- */
 
   return (
     <div className="flex m-5">
@@ -108,10 +75,9 @@ function App() {
       <div className="flex-1 flex flex-col m-5 ">
         <Header />
 
+        <Boards />
+
         <MainDashboard boards={boards} />
-
-    
-
         <div className="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] justify-center items-center h-screen w-4/5 mx-auto">
           {products.map((product) => (
             <Card key={product.id} product={product} />
@@ -121,5 +87,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+export default MovieCards;

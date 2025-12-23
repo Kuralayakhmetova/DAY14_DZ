@@ -25,10 +25,12 @@ function MainDashboard({ boards }) {
             hover:shadow-lg
           "
                 >
+                   <span>📚</span>
                   <h2 className="text-lg text-white font-semibold mb-2">
                     {board.title}
                   </h2>
                   <p className="text-slate-400 text-sm">{board.description}</p>
+                
                 </div>
               ))}
             </div>
@@ -40,7 +42,9 @@ function MainDashboard({ boards }) {
                 <p className="text-gray-200 text-center">НОВИНКИ</p>
               </div>
             </section>
+             
           </div>
+         
         </div>
       </main>
     </div>
