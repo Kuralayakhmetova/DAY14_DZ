@@ -1,6 +1,6 @@
 import styles from "./BoardCard.module.scss";
 
-function BoardCard({ title, description, date, onDelete }) {
+function BoardCard({ title, description, date, onRemoveBoard }) {
   return (
     <div className={styles.card}>
       <div className={styles.header}>
@@ -12,7 +12,7 @@ function BoardCard({ title, description, date, onDelete }) {
 
       <div className={styles.footer}>
         <span className={styles.date}>{date}</span>
-        <button onClick={onDelete} className={styles.delete}>
+        <button onClick={onRemoveBoard} className={styles.delete}>
           Удалить
         </button>
       </div>

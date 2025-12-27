@@ -1,26 +1,10 @@
+import React from "react";
 import { useState } from "react";
+import { boards as initialBoards } from "../data/boards";
+
 
 function Boards() {
-  const [boards, setBoards] = useState([
-    {
-      id: 1,
-      title: "Учебная доска",
-      description: "Доска для заданий и конспектов по React",
-      createdAt: "2025-03-15",
-    },
-    {
-      id: 2,
-      title: "Рабочая доска",
-      description: "Доска для заданий по JavaScript",
-      createdAt: "2025-03-16",
-    },
-    {
-      id: 3,
-      title: "Личная доска",
-      description: "Идеи и заметки",
-      createdAt: "2025-03-17",
-    },
-  ]);
+ const [boards, setBoards] = useState(initialBoards);
 
   // Добавление доски
   const handleAddBoard = () => {

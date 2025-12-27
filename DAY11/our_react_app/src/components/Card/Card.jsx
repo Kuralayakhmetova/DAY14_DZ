@@ -7,11 +7,12 @@ function Card({ product }) {
     // TODO: Add card styles
     <div className={cardStyles.card}>
       <h1 className={cardStyles.h1}>{product.title}</h1>
-      <img src={product.image} alt={product.title} />
-      <p>Год выпуска: {product.year}</p>
-      <p>Страна: {product.Country}</p>
       <br />
-      <button className={buttonStyles.button}>Смотреть</button>
+      <img src={product.image} alt={product.title} />
+      <h4>Год выпуска: {product.year}</h4>
+      <p>Автор: {product.author}</p>
+
+      <button className={buttonStyles.button}>📖 Читать</button>
     </div>
   );
 }

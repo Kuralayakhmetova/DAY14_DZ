@@ -1,5 +1,5 @@
-$primary-color: #453cf1;
-$text-color: #fff;
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
 .button {
   background: $primary-color;
