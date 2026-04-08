@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "path": "movie-app",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: build - movie-app",
+      "detail": "nest build"
+    }
+  ]
+}

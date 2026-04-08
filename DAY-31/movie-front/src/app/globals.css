@@ -1,0 +1,29 @@
+/* src/app/globals.css */
+@import "tailwindcss";
+
+
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+
+
+body {
+ background-color: #030712;
+ color: #f9fafb;
+ font-family: system-ui, sans-serif;
+}
+
+
+/* Красивый скроллбар */
+::-webkit-scrollbar {
+ width: 6px;
+}
+::-webkit-scrollbar-track {
+ background: #111827;
+}
+::-webkit-scrollbar-thumb {
+ background: #374151;
+ border-radius: 3px;
+}
