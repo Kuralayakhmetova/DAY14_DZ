@@ -7,8 +7,9 @@ const ACCESS_TOKEN_KEY = 'accessToken';
 // Сохраняем accessToken в cookie на 3 часа
 export function saveAccessToken(token: string) {
  Cookies.set(ACCESS_TOKEN_KEY, token, {
-   expires: 3 / 24,  // 3 час (3/24 от суток)
-   sameSite: 'lax',
+  httpOnly: true,  // НЕ РАБОТАЕТ в js-cookie, но для наглядности оставим
+   secure: true,    // НЕ РАБОТАЕТ в js-cookie, но для наглядности оставим  
+  sameSite: 'none', // НЕ РАБОТАЕТ в js-cookie, но для наглядности оставим
  });
 }
 
